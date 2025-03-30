@@ -8,7 +8,6 @@ std::vector<double> map(std::ifstream& dati)
 {
 		double val;
 		std::vector<double> vec;
-		int n=0;
 		while(dati>>val)
 		{
 			
@@ -16,7 +15,6 @@ std::vector<double> map(std::ifstream& dati)
 			val=(3.0/4.0)*val -(7.0/4.0);
 			//std::cout<<"trasf"<<val<<"\n"<<std::endl;
 			vec.push_back(val);
-			n+=1;
 		}
 		return vec;
 }
